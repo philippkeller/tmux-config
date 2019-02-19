@@ -281,8 +281,8 @@ If you are an iTerm2 user, third column describes the keybinding of similar  "ac
         <td>-</td>
     </tr>
     <tr>
-        <td><code>&lt;prefix&gt; F12</code></td>
-        <td>Switch off all key binding and prefix hanling in current window. See "Nested sessions" paragraph for more info</td>
+        <td><code>&lt;prefix&gt; C-t</code></td>
+        <td>Switch off all key binding and prefix handling in current window. See "Nested sessions" paragraph for more info</td>
         <td>-</td>
     </tr>
 </table>
@@ -330,7 +330,9 @@ Second attempt to tackle this issue, is to [setup 2 individual prefixes](https:/
 
 And finally accepted solution, turn off all keybindings and key prefix handling in outer session, when working with inner one. This way, outer session just sits aside, without interfering keystrokes passed to inner session. Credits to [http://stahlke.org/dan/tmux-nested/](http://stahlke.org/dan/tmux-nested/) and this [Github issue](https://github.com/tmux/tmux/issues/237)
 
-So, how it works. When in outer session, simply press `F12` to toggle off all keybindings handling in outer session. Now work with inner session using the same keybinding scheme and same keyprefix. Press `F12` to turn on outer session back.
+So, how it works. When in outer session, simply press `C-t` to toggle off all
+keybindings handling in outer session. Now work with inner session using the
+same keybinding scheme and same keyprefix. Press `C-t` to turn on outer session back.
 
 ![nested sessions](https://user-images.githubusercontent.com/768858/33151636-84a0bab2-cfe1-11e7-9d5d-412525689c9b.gif)
 
